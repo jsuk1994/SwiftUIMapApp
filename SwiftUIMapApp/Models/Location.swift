@@ -7,6 +7,8 @@
 import Foundation
 import MapKit
 
+
+//Model for the map app
 struct Location {
     let name: String
     let cityName: String

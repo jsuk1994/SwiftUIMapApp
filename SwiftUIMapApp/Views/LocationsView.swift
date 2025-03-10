@@ -11,7 +11,7 @@ import SwiftUI
 
 struct LocationsView: View {
     
-    @StateObject var vm = LocationViewModel()
+    @EnvironmentObject private var vm: LocationViewModel
     
     var body: some View {
         List {
@@ -24,4 +24,5 @@ struct LocationsView: View {
 
 #Preview {
     LocationsView()
+        .environmentObject(LocationViewModel())
 }
